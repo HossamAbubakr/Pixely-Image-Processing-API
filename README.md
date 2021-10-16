@@ -1,7 +1,7 @@
 # Pixely, Image Processing API
 
 <p align="center">
-  <img src="">
+  <img src="https://raw.githubusercontent.com/HossamAbubakr/Pixely-Image-Processing-API/main/logo.png">
 </p>
 
 ## Table of Contents
