@@ -41,7 +41,7 @@ Endpoints
 | Endpoint | Request | Parameters | Response | Usage
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | **/** | **GET** | **N/A** | **200** | **Root Route** |
-| **convert** | **GET** | **filename, width, heigh** | **200**| **Resize Images** |
+| **convert** | **GET** | **filename, width, height** | **200**| **Resize Images** |
 
 ## Testing
 
