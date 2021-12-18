@@ -15,7 +15,7 @@ convert.get("/", async (req: express.Request, res: express.Response) => {
     return res.status(200).send("Welcome to the conversion endpoint. An image filname, height and width are required parameters.");
   }
 
-  if (!filename || !width || !height || !isNaN(Number(width)) || !isNaN(Number(height))) {
+  if (!filename || !width || !height || isNaN(Number(width)) || isNaN(Number(height))) {
     return res.status(400).send("Error, missing or malformed parameters");
   }
 
