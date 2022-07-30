@@ -41,7 +41,7 @@ Endpoints
 | Endpoint    | Request | Parameters                  | Response | Usage             |
 | ----------- | ------- | --------------------------- | -------- | ----------------- |
 | **/**       | **GET** | **N/A**                     | **200**  | **Root Route**    |
-| **convert** | **GET** | **filename, width, height** | **200**  | **Resize Images** |
+| **/resize** | **GET** | **filename, width, height** | **200**  | **Resize Images** |
 
 ## Testing
 
@@ -82,11 +82,11 @@ To start the unit testing
     |   |   index.ts
     |   |
     |   \---api
-    |           convert.ts
+    |           resize.ts
     |
     +---tests
     |   +---endpointsSpecs
-    |   |       convertSpec.ts
+    |   |       resizeSpec.ts
     |   |       indexSpec.ts
     |   |
     |   +---helpers
