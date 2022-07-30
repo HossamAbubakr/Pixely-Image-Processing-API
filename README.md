@@ -6,17 +6,17 @@
 
 ## Table of Contents
 
-* [Summary](#Summary)
+- [Summary](#Summary)
 
-* [Technologies](#Technologies)
+- [Technologies](#Technologies)
 
-* [Usage](#Usage)
+- [Usage](#Usage)
 
-* [Testing](#Testing)
+- [Testing](#Testing)
 
-* [Structure](#Structure)
+- [Structure](#Structure)
 
-* [Usage and Installation](#usage-and-installation)
+- [Usage and Installation](#usage-and-installation)
 
 ## Summary
 
@@ -29,31 +29,34 @@ It demonstrates my understanding of Typescript, NodeJS, NodeJS Middleware, Expre
 ## Technologies
 
 NodeJS was used for the runtime.  
-Express was used for the backend.   
+Express was used for the backend.  
 Jasmine was used for the unit testing.  
 Sharp was used for the image processing.  
-Typescript was used as the programming language.  
+Typescript was used as the programming language.
 
 ## Usage
 
 Endpoints
 
-| Endpoint | Request | Parameters | Response | Usage
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| **/** | **GET** | **N/A** | **200** | **Root Route** |
-| **convert** | **GET** | **filename, width, height** | **200**| **Resize Images** |
+| Endpoint    | Request | Parameters                  | Response | Usage             |
+| ----------- | ------- | --------------------------- | -------- | ----------------- |
+| **/**       | **GET** | **N/A**                     | **200**  | **Root Route**    |
+| **/resize** | **GET** | **filename, width, height** | **200**  | **Resize Images** |
 
 ## Testing
 
 A full suite of tests are ready to use that cover all endpoints and helper functions
 
 You can use
+
 ```
 npm run jasmine
 ```
+
 To start the unit testing
 
-## Structure 
+## Structure
+
 ```
 +---assets
 |   |   encenadaport.jpg
@@ -79,11 +82,11 @@ To start the unit testing
     |   |   index.ts
     |   |
     |   \---api
-    |           convert.ts
+    |           resize.ts
     |
     +---tests
     |   +---endpointsSpecs
-    |   |       convertSpec.ts
+    |   |       resizeSpec.ts
     |   |       indexSpec.ts
     |   |
     |   +---helpers
@@ -97,7 +100,6 @@ To start the unit testing
             imageHandler.ts
 ```
 
-
 ## Usage and Installation
 
 You can get the project up and running in simple steps.
@@ -105,6 +107,7 @@ You can get the project up and running in simple steps.
 ```
 npm install
 ```
+
 Then you can use the following endpoint to process your images.
 
 ```
