@@ -11,8 +11,10 @@ convert.get("/", async (req: express.Request, res: express.Response) => {
   const outputDir = imgDir + "thumbnails/"; //  ex: c:\project\assets\thumbnails
   const targetImage = `${imgDir}${filename}.jpg`; //  ex: c:\project\assets\thumbnails\pic.jpg
 
-  if(Object.keys(req.query).length === 0) {
-    return res.status(200).send("Welcome to the conversion endpoint. An image filname, height and width are required parameters.");
+  if (Object.keys(req.query).length === 0) {
+    return res
+      .status(200)
+      .send("Welcome to the conversion endpoint. An image filename, height and width are required parameters.");
   }
 
   if (!filename || !width || !height || isNaN(Number(width)) || isNaN(Number(height))) {
@@ -27,7 +29,7 @@ convert.get("/", async (req: express.Request, res: express.Response) => {
     return res.status(404).send("Oh uh, image not found");
   }
 
-  if(!fileExists(outputDir)) {
+  if (!fileExists(outputDir)) {
     createDir(outputDir);
   }
 
